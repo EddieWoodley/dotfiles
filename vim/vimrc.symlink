@@ -1,4 +1,5 @@
-syntax on
-
-" Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+filetype plugin indent on          " filetype detection and settings
+syntax on                          " syntax highlighting
+set nocompatible                   " not strictly necessary but useful in some scenarii
+set backspace=indent,eol,start     " let the backspace key work "normally"
+set ruler                          " shows line number in the status line
