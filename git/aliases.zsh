@@ -68,3 +68,6 @@ alias gbr='git bisect reset'
 # cleanup
 alias ggc='git gc'
 alias gcr='git remote prune origin'
+
+# tools
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
