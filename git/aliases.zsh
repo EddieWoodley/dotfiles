@@ -33,9 +33,9 @@ alias gmgff='git merge --ff-only'
 
 # rebasing
 alias grb='git rebase'
-alias grc='git rebase --continue'
-alias grs='git rebase --skip'
-alias gra='git rebase --abort'
+alias grbc='git rebase --continue'
+alias grbs='git rebase --skip'
+alias grba='git rebase --abort'
 
 # branch management
 alias gco='git checkout'
