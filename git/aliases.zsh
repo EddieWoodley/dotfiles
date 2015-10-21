@@ -40,6 +40,7 @@ alias gra='git rebase --abort'
 # branch management
 alias gco='git checkout'
 alias gcb='git checkout -b'
+alias gbv='git branch -av'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
