@@ -1,11 +1,3 @@
-# Use `hub` as our git wrapper:
-#   http://defunkt.github.com/hub/
-hub_path=$(which hub)
-if (( $+commands[hub] ))
-then
-  alias git=$hub_path
-fi
-
 # status
 alias gst='git status -sb'
 
@@ -40,7 +32,7 @@ alias grba='git rebase --abort'
 # branch management
 alias gco='git checkout'
 alias gcb='git checkout -b'
-alias gbv='git branch -av'
+alias gbv='git branch -vv'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 
@@ -69,6 +61,7 @@ alias gbr='git bisect reset'
 # cleanup
 alias ggc='git gc'
 alias gcr='git remote prune origin'
+alias gcl="git branch -r | awk '{print \$1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print \$1}' | xargs git branch -D"
 
 # tools
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
